@@ -5,7 +5,7 @@
    ========================================================= */
 
 /* À remplacer par l'URL réelle de ton Worker Cloudflare une fois déployé. */
-const WORKER_URL = "const WORKER_URL = "https://fragrant-base-e05d.lmauge-joan76.workers.dev";";
+const WORKER_URL = "https://fragrant-base-e05d.lmauge-joan76.workers.dev";
 
 const views = {
   loggedOut: document.querySelector('[data-view="logged-out"]'),
