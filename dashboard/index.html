@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Horizon RP</title>
+<meta name="robots" content="noindex">
+
+<link rel="icon" type="image/png" href="https://cdn.discordapp.com/icons/1450145318258868375/939de81ee6771801001f7017762140a6.webp?size=128">
+<link rel="apple-touch-icon" href="https://cdn.discordapp.com/icons/1450145318258868375/939de81ee6771801001f7017762140a6.webp?size=256">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="brand">
+      <img src="https://cdn.discordapp.com/icons/1450145318258868375/939de81ee6771801001f7017762140a6.webp?size=128" alt="Logo Horizon RP">
+      <span class="brand__text">
+        <span class="brand__name">Horizon RP</span>
+        <span class="brand__tag">Emergency Hamburg</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="../index.html">Accueil</a>
+      <a href="../index.html#roles">Métiers</a>
+      <a href="../index.html#rejoindre">Rejoindre</a>
+      <a href="./" class="is-active">Dashboard</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn-discord" data-discord-login type="button">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.54 5.36A16.3 16.3 0 0 0 15.48 4.1a.06.06 0 0 0-.066.031c-.176.314-.373.723-.51 1.045a15.06 15.06 0 0 0-4.526 0 10.27 10.27 0 0 0-.518-1.045.06.06 0 0 0-.066-.031 16.26 16.26 0 0 0-4.06 1.26.057.057 0 0 0-.026.022C3.13 9.39 2.36 13.31 2.74 17.18a.068.068 0 0 0 .026.046 16.37 16.37 0 0 0 4.93 2.49.06.06 0 0 0 .067-.022c.38-.519.718-1.066 1.01-1.64a.06.06 0 0 0-.033-.084 10.78 10.78 0 0 1-1.541-.735.062.062 0 0 1-.006-.103c.104-.078.207-.16.306-.242a.06.06 0 0 1 .062-.008c3.234 1.477 6.736 1.477 9.932 0a.06.06 0 0 1 .063.007c.099.083.202.165.307.243a.062.062 0 0 1-.005.103 10.1 10.1 0 0 1-1.542.734.06.06 0 0 0-.032.086c.298.573.637 1.12 1.009 1.638a.06.06 0 0 0 .066.023 16.32 16.32 0 0 0 4.936-2.49.06.06 0 0 0 .025-.045c.453-4.476-.76-8.364-3.218-11.81a.05.05 0 0 0-.025-.023ZM9.69 14.81c-.973 0-1.774-.89-1.774-1.983 0-1.094.785-1.984 1.774-1.984 .998 0 1.79.898 1.774 1.984 0 1.094-.785 1.983-1.774 1.983Zm6.55 0c-.973 0-1.774-.89-1.774-1.983 0-1.094.786-1.984 1.774-1.984.999 0 1.79.898 1.774 1.984 0 1.094-.775 1.983-1.774 1.983Z"/></svg>
+        <span class="btn-label">Se connecter</span>
+      </button>
+      <button class="burger" data-burger aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" data-mobile-nav aria-label="Navigation mobile">
+  <a href="../index.html">Accueil</a>
+  <a href="../index.html#roles">Métiers</a>
+  <a href="../index.html#rejoindre">Rejoindre</a>
+  <a href="./">Dashboard</a>
+  <div class="mobile-nav__foot">
+    <button class="btn-discord" data-discord-login type="button" style="width:100%;">
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:17px;height:17px;"><path d="M19.54 5.36A16.3 16.3 0 0 0 15.48 4.1a.06.06 0 0 0-.066.031c-.176.314-.373.723-.51 1.045a15.06 15.06 0 0 0-4.526 0 10.27 10.27 0 0 0-.518-1.045.06.06 0 0 0-.066-.031 16.26 16.26 0 0 0-4.06 1.26.057.057 0 0 0-.026.022C3.13 9.39 2.36 13.31 2.74 17.18a.068.068 0 0 0 .026.046 16.37 16.37 0 0 0 4.93 2.49.06.06 0 0 0 .067-.022c.38-.519.718-1.066 1.01-1.64a.06.06 0 0 0-.033-.084 10.78 10.78 0 0 1-1.541-.735.062.062 0 0 1-.006-.103c.104-.078.207-.16.306-.242a.06.06 0 0 1 .062-.008c3.234 1.477 6.736 1.477 9.932 0a.06.06 0 0 1 .063.007c.099.083.202.165.307.243a.062.062 0 0 1-.005.103 10.1 10.1 0 0 1-1.542.734.06.06 0 0 0-.032.086c.298.573.637 1.12 1.009 1.638a.06.06 0 0 0 .066.023 16.32 16.32 0 0 0 4.936-2.49.06.06 0 0 0 .025-.045c.453-4.476-.76-8.364-3.218-11.81a.05.05 0 0 0-.025-.023ZM9.69 14.81c-.973 0-1.774-.89-1.774-1.983 0-1.094.785-1.984 1.774-1.984 .998 0 1.79.898 1.774 1.984 0 1.094-.785 1.983-1.774 1.983Zm6.55 0c-.973 0-1.774-.89-1.774-1.983 0-1.094.786-1.984 1.774-1.984.999 0 1.79.898 1.774 1.984 0 1.094-.775 1.983-1.774 1.983Z"/></svg>
+      Se connecter avec Discord
+    </button>
+  </div>
+</nav>
+
+<!-- État A : pas connecté -->
+<main class="dash-shell" data-view="logged-out">
+  <div class="dash-card">
+    <div class="dash-card__icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+    </div>
+    <h1>Accès réservé</h1>
+    <p>Connectez-vous avec Discord pour accéder à votre dashboard Horizon RP.</p>
+    <button class="btn-primary" data-discord-login type="button" style="margin: 0 auto;">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19.54 5.36A16.3 16.3 0 0 0 15.48 4.1a.06.06 0 0 0-.066.031c-.176.314-.373.723-.51 1.045a15.06 15.06 0 0 0-4.526 0 10.27 10.27 0 0 0-.518-1.045.06.06 0 0 0-.066-.031 16.26 16.26 0 0 0-4.06 1.26.057.057 0 0 0-.026.022C3.13 9.39 2.36 13.31 2.74 17.18a.068.068 0 0 0 .026.046 16.37 16.37 0 0 0 4.93 2.49.06.06 0 0 0 .067-.022c.38-.519.718-1.066 1.01-1.64a.06.06 0 0 0-.033-.084 10.78 10.78 0 0 1-1.541-.735.062.062 0 0 1-.006-.103c.104-.078.207-.16.306-.242a.06.06 0 0 1 .062-.008c3.234 1.477 6.736 1.477 9.932 0a.06.06 0 0 1 .063.007c.099.083.202.165.307.243a.062.062 0 0 1-.005.103 10.1 10.1 0 0 1-1.542.734.06.06 0 0 0-.032.086c.298.573.637 1.12 1.009 1.638a.06.06 0 0 0 .066.023 16.32 16.32 0 0 0 4.936-2.49.06.06 0 0 0 .025-.045c.453-4.476-.76-8.364-3.218-11.81a.05.05 0 0 0-.025-.023ZM9.69 14.81c-.973 0-1.774-.89-1.774-1.983 0-1.094.785-1.984 1.774-1.984 .998 0 1.79.898 1.774 1.984 0 1.094-.785 1.983-1.774 1.983Zm6.55 0c-.973 0-1.774-.89-1.774-1.983 0-1.094.786-1.984 1.774-1.984.999 0 1.79.898 1.774 1.984 0 1.094-.775 1.983-1.774 1.983Z"/></svg>
+      Se connecter avec Discord
+    </button>
+  </div>
+</main>
+
+<!-- État B : connexion en cours (échange du code avec le Worker) -->
+<main class="dash-shell" data-view="loading" style="display:none;">
+  <div class="dash-card">
+    <div class="dash-card__icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+    </div>
+    <h1>Connexion en cours…</h1>
+    <p>Vérification de votre compte Discord.</p>
+  </div>
+</main>
+
+<!-- État C : connecté — dashboard complet -->
+<section class="wrap dash-app" data-view="app" style="display:none;">
+  <div class="dash-app__head">
+    <div class="dash-app__profile">
+      <img data-user-avatar src="" alt="Avatar">
+      <div>
+        <h1 data-user-name>—<span class="staff-badge" data-staff-badge hidden>Staff</span></h1>
+        <p>Connecté avec Discord</p>
+      </div>
+    </div>
+    <button class="duty-toggle" data-duty-toggle data-on-duty="false" type="button" hidden>
+      <span class="duty-dot"></span>
+      <span data-duty-label>Prendre son service</span>
+    </button>
+  </div>
+
+  <div class="dash-tabs">
+    <button class="is-active" data-tab="report" type="button">Signaler</button>
+    <button data-tab="staff-online" type="button">Staff en service</button>
+    <button data-tab="staff-panel" data-staff-only hidden type="button">Panneau staff</button>
+    <button data-tab="settings" data-admin-only hidden type="button">Paramètres</button>
+  </div>
+
+  <!-- Onglet : signaler un joueur -->
+  <div class="dash-panel is-active" data-panel="report">
+    <div class="dash-split">
+      <form class="form-card" data-report-form>
+        <h2>Signaler un joueur</h2>
+        <p>Votre signalement est transmis directement au staff Horizon RP.</p>
+
+        <div class="field">
+          <label for="report-username">Pseudo Roblox</label>
+          <input id="report-username" name="robloxUsername" type="text" required placeholder="ex: Horizon_Player123">
+        </div>
+        <div class="field">
+          <label for="report-id">ID Roblox</label>
+          <input id="report-id" name="robloxId" type="text" required placeholder="ex: 123456789">
+        </div>
+        <div class="field">
+          <label for="report-proof">Lien de preuve (image / vidéo)</label>
+          <input id="report-proof" name="proofUrl" type="url" required placeholder="https://...">
+        </div>
+        <div class="field">
+          <label for="report-reason">Motif</label>
+          <textarea id="report-reason" name="reason" required placeholder="Décrivez ce qui s'est passé"></textarea>
+        </div>
+
+        <button class="btn-primary" type="submit">Envoyer le signalement</button>
+        <div class="form-feedback" data-report-feedback></div>
+      </form>
+
+      <div class="list-card">
+        <div class="list-card__head">
+          <h2>Derniers signalements</h2>
+          <span class="list-card__count" data-reports-count></span>
+        </div>
+        <div class="list-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" data-reports-search placeholder="Rechercher un pseudo ou un ID Roblox…">
+        </div>
+        <div data-reports-list>
+          <div class="list-empty">Chargement…</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Onglet : staff en service -->
+  <div class="dash-panel" data-panel="staff-online">
+    <div class="list-card">
+      <div class="list-card__head">
+        <h2>Staff actuellement en service</h2>
+        <span class="list-card__count" data-duty-count></span>
+      </div>
+      <div data-duty-list>
+        <div class="list-empty">Chargement…</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Onglet : panneau staff (visible uniquement si isStaff) -->
+  <div class="dash-panel" data-panel="staff-panel">
+    <div class="dash-split">
+      <form class="form-card" data-sanction-form>
+        <h2>Sanctionner un joueur</h2>
+        <p>Action enregistrée dans les logs Horizon RP.</p>
+
+        <div class="field">
+          <label for="sanction-type">Type de sanction</label>
+          <select id="sanction-type" name="type" required>
+            <option value="warn">Avertissement</option>
+            <option value="kick">Exclusion (kick)</option>
+            <option value="ban">Bannissement</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="sanction-username">Pseudo Roblox</label>
+          <input id="sanction-username" name="robloxUsername" type="text" required placeholder="ex: Horizon_Player123">
+        </div>
+        <div class="field">
+          <label for="sanction-id">ID Roblox</label>
+          <input id="sanction-id" name="robloxId" type="text" required placeholder="ex: 123456789">
+        </div>
+        <div class="field">
+          <label for="sanction-duration">Durée</label>
+          <input id="sanction-duration" name="duration" type="text" required placeholder="ex: 7 jours, Permanent, 24h">
+        </div>
+        <div class="field">
+          <label for="sanction-reason">Raison</label>
+          <textarea id="sanction-reason" name="reason" required placeholder="Motif de la sanction"></textarea>
+        </div>
+
+        <button class="btn-danger" type="submit" style="width:100%; justify-content:center;">Appliquer la sanction</button>
+        <div class="form-feedback" data-sanction-feedback></div>
+      </form>
+
+      <div class="list-card">
+        <div class="list-card__head">
+          <h2>Dernières sanctions</h2>
+          <span class="list-card__count" data-sanctions-count></span>
+        </div>
+        <div class="list-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" data-sanctions-search placeholder="Rechercher un pseudo ou un ID Roblox…">
+        </div>
+        <div data-sanctions-list>
+          <div class="list-empty">Chargement…</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Onglet : paramètres (visible uniquement si isAdmin) -->
+  <div class="dash-panel" data-panel="settings">
+    <div class="dash-split">
+      <form class="form-card" data-settings-form>
+        <h2>Paramètres du site</h2>
+        <p>Ces réglages s'appliquent immédiatement à tous les visiteurs.</p>
+
+        <div class="field field--toggle">
+          <label class="toggle-row">
+            <input type="checkbox" name="recrutementOuvert">
+            <span>Recrutement ouvert</span>
+          </label>
+        </div>
+        <div class="field field--toggle">
+          <label class="toggle-row">
+            <input type="checkbox" name="maintenance">
+            <span>Site en maintenance</span>
+          </label>
+        </div>
+
+        <h3 class="form-card__subhead">Carte « Horizon RP — Aperçu »</h3>
+        <p class="form-card__hint">Ajoutez, modifiez ou supprimez les lignes affichées dans la carte d'aperçu sur la page d'accueil.</p>
+
+        <div class="preview-editor" data-preview-editor></div>
+
+        <button type="button" class="btn-ghost" data-add-preview-item style="width:100%; justify-content:center; margin-bottom:20px;">
+          + Ajouter une ligne
+        </button>
+
+        <button class="btn-primary" type="submit" style="width:100%; justify-content:center;">Enregistrer</button>
+        <div class="form-feedback" data-settings-feedback></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a href="../index.html" class="brand">
+          <img src="https://cdn.discordapp.com/icons/1450145318258868375/939de81ee6771801001f7017762140a6.webp?size=128" alt="Logo Horizon RP">
+          <span class="brand__text">
+            <span class="brand__name">Horizon RP</span>
+            <span class="brand__tag">Emergency Hamburg</span>
+          </span>
+        </a>
+        <p class="site-footer__desc">Communauté francophone de roleplay sur Emergency Hamburg, Roblox.</p>
+      </div>
+
+      <div class="site-footer__col">
+        <h3>Navigation</h3>
+        <a href="../index.html">Accueil</a>
+        <a href="../index.html#roles">Métiers</a>
+        <a href="../index.html#rejoindre">Rejoindre</a>
+        <a href="./">Dashboard</a>
+      </div>
+
+      <div class="site-footer__col">
+        <h3>Communauté</h3>
+        <a href="https://discord.gg/q8EvGRN9yf" data-discord-invite>Rejoindre le Discord</a>
+        <a href="../recrutement/">Candidature staff</a>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p>&copy; 2026 Horizon RP — Communauté non affiliée à Elbside Studios ou Roblox Corporation.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../app.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>
