@@ -1,0 +1,12 @@
+# Horizon RP — Règles de redirection Netlify
+# Documentation : https://docs.netlify.com/routing/redirects/
+#
+# Netlify gère déjà nativement /dashboard/, /recrutement/ et
+# /mentions-legales/ via leurs dossiers (index.html à l'intérieur),
+# sans configuration nécessaire. On ne force pas l'URL sans slash
+# final ici : la tentative précédente créait un conflit de règles
+# qui interrompait le chargement de dashboard.js en cours de route.
+#
+# Seule règle utile : rediriger toute URL inconnue vers la page 404.
+
+/*   /404.html   404
