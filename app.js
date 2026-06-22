@@ -16,7 +16,7 @@
 
 /* ---------- Config OAuth2 Discord ---------- */
 const DISCORD_CLIENT_ID = "1517820606656020641";
-const REDIRECT_URI = "https://horizons-rp.netlify.app/dashboard/";
+const REDIRECT_URI = "https://devcenter24.github.io/horizon-rp/dashboard/";
 const DISCORD_INVITE = "https://discord.gg/q8EvGRN9yf";
 
 const DISCORD_OAUTH_URL =
