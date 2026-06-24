@@ -1,0 +1,9 @@
+# Horizon RP — Règles Netlify
+# Réécritures internes (200) : l'URL affichée reste sans slash,
+# le contenu du dossier est servi directement.
+/dashboard          /dashboard/index.html          200
+/recrutement        /recrutement/index.html        200
+/mentions-legales   /mentions-legales/index.html   200
+
+# Toute URL inconnue → page 404 personnalisée
+/*   /404.html   404

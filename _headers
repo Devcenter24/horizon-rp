@@ -1,0 +1,32 @@
+# Horizon RP — Headers de sécurité HTTP
+# Appliqués sur toutes les pages du site par Netlify.
+# Résout : CSP, X-Content-Type-Options, X-Frame-Options, CORP.
+
+/*
+  # Interdit l'inclusion du site dans une iframe (anti-clickjacking)
+  X-Frame-Options: DENY
+
+  # Empêche le navigateur de deviner le type MIME (anti-MIME-sniffing)
+  X-Content-Type-Options: nosniff
+
+  # Politique de référent : n'envoie que l'origine, pas le chemin complet
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Politique de ressources inter-origines
+  Cross-Origin-Resource-Policy: same-origin
+
+  # Politique des permissions : désactive les APIs sensibles inutilisées
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+
+  # Content Security Policy
+  # - default-src 'self' : tout vient du même domaine par défaut
+  # - script-src : scripts du domaine + inline nécessaires au site
+  # - style-src : styles du domaine + Google Fonts
+  # - font-src : Google Fonts
+  # - img-src : domaine + CDN Discord (avatars, icônes)
+  # - connect-src : appels AJAX vers le Worker Cloudflare + Supabase
+  # - frame-ancestors 'none' : renforce l'anti-clickjacking (remplace XFO)
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://cdn.discordapp.com https://images-ext-1.discordapp.net; connect-src 'self' https://fragrant-base-e05d.lmauge-joan76.workers.dev https://yqiambmrntcqywsbumzq.supabase.co; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+
+  # HSTS : force HTTPS pendant 1 an (activer une fois HTTPS confirmé stable)
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
